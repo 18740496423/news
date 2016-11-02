@@ -7,18 +7,21 @@
     android:orientation="horizontal"
     tools:context="news.zhuoxin.com.news.activity.MainActivity">
 
-   <fragment
+   <FrameLayout
+       android:id="@+id/center_main"
        android:name="news.zhuoxin.com.news.fragment.CenterFragment"
        android:layout_width="match_parent"
        android:layout_height="match_parent"/>
 
     <fragment
+        android:id="@+id/left_main"
         android:name="news.zhuoxin.com.news.fragment.LeftFragment"
         android:layout_width="270dp"
         android:layout_height="match_parent"
         android:layout_gravity="left" />
 
     <fragment
+        android:id="@+id/right_main"
         android:name="news.zhuoxin.com.news.fragment.RightFragment"
         android:layout_width="270dp"
         android:layout_height="match_parent"
