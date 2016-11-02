@@ -1,4 +1,4 @@
-package news.zhuoxin.com.news;
+package news.zhuoxin.com.news.activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.ImageView;
+
+import news.zhuoxin.com.news.R;
 
 /**
  * Created by Administrator on 2016/10/27.

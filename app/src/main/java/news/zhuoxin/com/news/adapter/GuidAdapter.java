@@ -1,4 +1,4 @@
-package adapter;
+package news.zhuoxin.com.news.adapter;
 
 import android.support.v4.view.PagerAdapter;
 import android.view.View;

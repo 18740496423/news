@@ -1,4 +1,4 @@
-package fragment;
+package news.zhuoxin.com.news.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,13 +13,13 @@ import com.google.gson.reflect.TypeToken;
 
 import java.util.ArrayList;
 
-import adapter.CenterAdapter;
-import entity.CenterInfo;
-import entity.TitleInfo;
-import inter.OnLoadNewsListListener;
+import news.zhuoxin.com.news.adapter.CenterAdapter;
+import news.zhuoxin.com.news.entity.CenterInfo;
+import news.zhuoxin.com.news.entity.TitleInfo;
+import news.zhuoxin.com.news.inter.OnLoadNewsListListener;
 import me.maxwin.view.XListView;
 import news.zhuoxin.com.news.R;
-import utils.NewsAsynTask;
+import news.zhuoxin.com.news.utils.NewsAsynTask;
 
 /**
  * Created by Administrator on 2016/10/28.

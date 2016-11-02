@@ -1,4 +1,4 @@
-package fragment;
+package news.zhuoxin.com.news.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,11 +13,11 @@ import news.zhuoxin.com.news.R;
  * Created by Administrator on 2016/10/28.
  */
 
-public class RightFragment extends Fragment {
+public class LeftFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.right_fragment,container,false);
+        return inflater.inflate(R.layout.left_fragment,container,false);
     }
 
     @Override

@@ -1,4 +1,4 @@
-package adapter;
+package news.zhuoxin.com.news.adapter;
 
 import android.content.Context;
 import android.util.Log;

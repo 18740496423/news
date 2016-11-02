@@ -1,4 +1,4 @@
-package entity;
+package news.zhuoxin.com.news.entity;
 
 import java.util.ArrayList;
 

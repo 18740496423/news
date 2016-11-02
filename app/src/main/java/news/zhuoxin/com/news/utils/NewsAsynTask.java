@@ -1,4 +1,4 @@
-package utils;
+package news.zhuoxin.com.news.utils;
 
 import android.os.AsyncTask;
 import android.util.Log;
@@ -9,7 +9,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import inter.OnLoadNewsListListener;
+import news.zhuoxin.com.news.inter.OnLoadNewsListListener;
 
 /**
  * Created by Administrator on 2016/11/1.

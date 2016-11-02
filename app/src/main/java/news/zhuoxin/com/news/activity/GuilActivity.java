@@ -1,4 +1,4 @@
-package news.zhuoxin.com.news;
+package news.zhuoxin.com.news.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,7 +6,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
-import adapter.GuidAdapter;
+import news.zhuoxin.com.news.adapter.GuidAdapter;
+import news.zhuoxin.com.news.R;
 
 /**
  * Created by Administrator on 2016/10/27.

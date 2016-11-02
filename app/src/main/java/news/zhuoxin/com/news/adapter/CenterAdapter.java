@@ -1,4 +1,4 @@
-package adapter;
+package news.zhuoxin.com.news.adapter;
 
 import android.content.Context;
 import android.view.View;
@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-import entity.CenterInfo;
+import news.zhuoxin.com.news.entity.CenterInfo;
 import news.zhuoxin.com.news.R;
 
 /**
