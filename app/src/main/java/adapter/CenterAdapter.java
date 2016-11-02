@@ -1,0 +1,52 @@
+package adapter;
+
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
+
+import entity.CenterInfo;
+import news.zhuoxin.com.news.R;
+
+/**
+ * Created by Administrator on 2016/11/1.
+ */
+
+public class CenterAdapter extends MyAdapter<CenterInfo> {
+    Context context;
+    public CenterAdapter(Context context) {
+        super(context);
+        this.context=context;
+    }
+
+    @Override
+    public View setView(int position, View convertView, ViewGroup parent) {
+        Holder holder=null;
+        if (convertView==null) {
+            holder=new Holder();
+            convertView= inflater.inflate(R.layout.center_adapter, parent, false);
+            holder.mImg_Icon= (ImageView) convertView.findViewById(R.id.img_adapter_icon);
+            holder.mTxt_Title= (TextView) convertView.findViewById(R.id.txt_adapter_title);
+            holder.mTxt_Summary= (TextView) convertView.findViewById(R.id.txt_adapter_summary);
+            holder.mTxt_Stamp= (TextView) convertView.findViewById(R.id.txt_adapter_stamp);
+        convertView.setTag(holder);
+        }else{
+            holder = (Holder) convertView.getTag();
+        }
+        Picasso.with(convertView.getContext()).load(mList.get(position).getIcon()).into(holder.mImg_Icon);
+        holder.mTxt_Title.setText(mList.get(position).getTitle());
+        holder.mTxt_Summary.setText(mList.get(position).getSummary());
+        holder.mTxt_Stamp.setText(mList.get(position).getStamp());
+        return convertView;
+    }
+    static class Holder{
+        ImageView mImg_Icon;
+        TextView mTxt_Title;
+        TextView mTxt_Summary;
+        TextView mTxt_Stamp;
+
+    }
+}
