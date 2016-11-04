@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
 <LinearLayout
     android:layout_margin="20dp"
     android:layout_width="match_parent"
@@ -30,6 +31,7 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btn_fragment_enter"
             android:textColor="#fff"
             android:background="@android:color/holo_red_dark"
             android:text="注册"
@@ -38,6 +40,7 @@
             android:layout_height="wrap_content" />
 
         <Button
+            android:id="@+id/btn_password"
             android:textColor="#fff"
             android:layout_marginLeft="5dp"
             android:background="@android:color/holo_red_dark"

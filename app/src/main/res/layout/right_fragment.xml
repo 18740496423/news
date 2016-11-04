@@ -2,70 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/bg_slidingmenu_left"
+
     android:orientation="vertical">
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:background="@mipmap/userbg"
-        android:src="@mipmap/biz_pc_main_info_profile_avatar_bg_dark" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:text="立即登录"
-        android:textColor="#f0f8ff"
-        android:textSize="25sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="150dp"
-        android:text="立即更新"
-        android:textColor="#f0f8ff"
-        android:textSize="15sp" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@mipmap/share_little_bg"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="30dp"
-            android:src="@mipmap/fun_share_weixin" />
-
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="20dp"
-            android:src="@mipmap/addimport_qq" />
-
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="20dp"
-            android:src="@mipmap/fun_share_friends" />
-
-        <ImageView
-            android:layout_gravity="center"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="20dp"
-            android:src="@mipmap/fun_share_weibo" />
-
-    </LinearLayout>
+<FrameLayout
+    android:id="@+id/frament_right"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></FrameLayout>
 </LinearLayout>
