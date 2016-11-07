@@ -33,7 +33,7 @@
         <Button
             android:id="@+id/btn_fragment_enter"
             android:textColor="#fff"
-            android:background="@android:color/holo_red_dark"
+            android:background="#383838"
             android:text="注册"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -43,7 +43,7 @@
             android:id="@+id/btn_password"
             android:textColor="#fff"
             android:layout_marginLeft="5dp"
-            android:background="@android:color/holo_red_dark"
+            android:background="#383838"
             android:text="忘记密码"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -52,7 +52,7 @@
         <Button
             android:textColor="#fff"
             android:layout_marginLeft="5dp"
-            android:background="@android:color/holo_red_dark"
+            android:background="#383838"
             android:text="登录"
             android:layout_weight="1"
             android:layout_width="0dp"

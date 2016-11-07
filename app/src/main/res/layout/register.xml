@@ -33,7 +33,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:text="立即注册"
-        android:background="@android:color/holo_red_dark"
+        android:background="#383838"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>
