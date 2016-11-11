@@ -20,6 +20,7 @@ import java.util.Date;
 
 import me.maxwin.view.XListView;
 import news.zhuoxin.com.news.R;
+import news.zhuoxin.com.news.activity.MainActivity;
 import news.zhuoxin.com.news.activity.NewsActivity;
 import news.zhuoxin.com.news.adapter.CenterAdapter;
 import news.zhuoxin.com.news.entity.CenterInfo;
@@ -55,6 +56,7 @@ public class CenterFragment extends Fragment implements XListView.IXListViewList
         mXlst_center.setPullRefreshEnable(true);
         //下拉刷新 上拉加载 需要设置监听事件 否则 停不下来或无法加载更多
         mXlst_center.setXListViewListener(this);
+        ((MainActivity)getActivity()).setTitle("资讯");
 
         mHandler = new Handler();
         adapter = new CenterAdapter(getActivity());

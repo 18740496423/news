@@ -34,6 +34,7 @@ public class LeftFragment extends Fragment implements View.OnClickListener{
         mLyt_news.setOnClickListener(this);
          supportFragmentManager = getActivity().getSupportFragmentManager();
          centerFragment=new CenterFragment();
+
     }
 
 
@@ -45,6 +46,7 @@ public class LeftFragment extends Fragment implements View.OnClickListener{
                 FragmentTransaction fragmentTransaction = supportFragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.center_main,centerFragment);
                 fragmentTransaction.commit();
+               // ((MainActivity)getActivity()).setTitle("资讯");
                 break;
         }
     }

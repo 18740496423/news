@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import news.zhuoxin.com.news.R;
+import news.zhuoxin.com.news.activity.MainActivity;
 
 /**
  * Created by Administrator on 2016/11/3.
@@ -23,5 +24,6 @@ public class ForgetPasswordFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        ((MainActivity)getActivity()).setTitle("忘记密码");
     }
 }

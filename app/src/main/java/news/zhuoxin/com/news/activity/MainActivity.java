@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
@@ -15,8 +16,8 @@ import news.zhuoxin.com.news.fragment.CenterFragment;
 import news.zhuoxin.com.news.fragment.LeftFragment;
 import news.zhuoxin.com.news.fragment.RightFragment;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+TextView mTxt_title;
     CenterFragment centerFragment;
     RightFragment rightFragment;
     LeftFragment leftFragment;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //获取V4包的Fragment  管理器
         manager = getSupportFragmentManager();
-        Log.e("---","manager="+manager);
+        Log.e("---", "manager=" + manager);
         centerFragment = new CenterFragment();
         rightFragment = new RightFragment();
         leftFragment = new LeftFragment();
@@ -48,10 +49,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         FragmentTransaction fragmentTransaction = manager.beginTransaction();
         //执行业务
         fragmentTransaction.replace(R.id.center_main, centerFragment);
-        Log.e("qqqqq","wwwwww");
+        Log.e("qqqqq", "wwwwww");
         //提交业务
         fragmentTransaction.commit();
-
 
 
     }
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //第一菜单
         slidingMenu.setMenu(R.layout.left_fragment);
         FragmentTransaction beginTransaction = manager.beginTransaction();
-        beginTransaction.replace(R.id.lyt_left,leftFragment);
+        beginTransaction.replace(R.id.lyt_left, leftFragment);
         beginTransaction.commit();
         //第二菜单
         slidingMenu.setSecondaryMenu(R.layout.right_fragment);
@@ -84,9 +84,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     }
+
     private void initView() {
-        mLeft= (ImageView) findViewById(R.id.img_main_left);
-        mRight= (ImageView) findViewById(R.id.img_main_right);
+        mLeft = (ImageView) findViewById(R.id.img_main_left);
+        mRight = (ImageView) findViewById(R.id.img_main_right);
+        mTxt_title= (TextView) findViewById(R.id.txt_main);
         mLeft.setOnClickListener(this);
         mRight.setOnClickListener(this);
     }
@@ -107,6 +109,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    //设置title的方法
+    public void setTitle(String title){
+        mTxt_title.setText(title);
+    }
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
