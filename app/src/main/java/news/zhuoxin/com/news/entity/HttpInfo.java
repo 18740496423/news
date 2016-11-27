@@ -16,4 +16,5 @@ public class HttpInfo {
     public static final String USER_FORGETPASS="path/user_forgetpass?";
     //新闻分类的网络地址
     public static final String NEWS_SORT="path/news_sort?";
+    public static final String USER_HOME="path/user_home?";
 }

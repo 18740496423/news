@@ -45,7 +45,7 @@ public class CenterAdapter extends MyAdapter<CenterInfo> {
         }
        // holder.mCard.setCardBackgroundColor(groud[position%groud.length]);
         //holder.mCard.setBackgroundResource(groud[position%groud.length]);
-       holder.mLyt_groud.setBackgroundResource(groud[position%groud.length]);
+       //holder.mLyt_groud.setBackgroundResource(groud[position%groud.length]);
         Picasso.with(convertView.getContext()).load(mList.get(position).getIcon()).into(holder.mImg_Icon);
         holder.mTxt_Title.setText(mList.get(position).getTitle());
         holder.mTxt_Summary.setText(mList.get(position).getSummary());
